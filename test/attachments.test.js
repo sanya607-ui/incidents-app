@@ -10,7 +10,7 @@ describe('Test attachments service', () => {
     expect(exists('srv/attachments.cds')).to.be.true
   })
 
-  const { GET, POST, PUT, DELETE , expect, axios} = cds.test()
+  const { GET, POST, PUT, DELETE , expect, axios} = cds.test('.', '--with-mocks')
   axios.defaults.auth = { username: 'alice' }
 
   const Incidents = '/odata/v4/processor/Incidents'

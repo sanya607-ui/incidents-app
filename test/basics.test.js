@@ -1,7 +1,7 @@
 const cds = require('@sap/cds')
 
 describe('Test The GET Endpoints', () => {
-  const { GET, expect, axios } = cds.test(__dirname+'/..')
+  const { GET, expect, axios } = cds.test(__dirname+'/..',  '--with-mocks')
   axios.defaults.auth = { username: 'alice' }
 
   it('Should check Processor Service', async () => {

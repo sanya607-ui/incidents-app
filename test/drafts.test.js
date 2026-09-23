@@ -2,7 +2,7 @@ const cds = require('@sap/cds')
 
 describe('Draft Choreography APIs', () => {
 
-  const { GET, POST, DELETE, PATCH, expect, axios } = cds.test(__dirname+'/..')
+  const { GET, POST, DELETE, PATCH, expect, axios } = cds.test(__dirname+'/..',  '--with-mocks')
   axios.defaults.auth = { username: 'alice' }
 
   const Incidents = '/odata/v4/processor/Incidents'

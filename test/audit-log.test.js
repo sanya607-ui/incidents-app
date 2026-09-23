@@ -6,7 +6,7 @@ describe("Integration Test for AuditLog", () => {
   beforeAll (()=> copy('xmpls/data-privacy.cds').to('srv/data-privacy.cds'))
   afterAll (()=> rm('srv/data-privacy.cds'))
 
-  const { GET, POST, PATCH , expect, axios} = cds.test()
+  const { GET, POST, PATCH , expect, axios} = cds.test('.', '--with-mocks')
   axios.defaults.auth = { username: 'alice' }
 
   it('should have the copied files in place', () => {

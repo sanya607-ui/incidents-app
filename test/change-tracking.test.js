@@ -10,7 +10,7 @@ describe("Integration Test for ChangeTracking", () => {
     expect(exists('srv/change-tracking.cds')).to.be.true
   })
 
-  const { GET, POST, PATCH, DELETE, expect, axios} = cds.test()
+  const { GET, POST, PATCH, DELETE, expect, axios} = cds.test('.', '--with-mocks')
   axios.defaults.auth = { username: 'alice' }
 
   const Incidents = '/odata/v4/processor/Incidents'

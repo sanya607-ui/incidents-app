@@ -3,6 +3,6 @@ ID: capire.incidents.remote-mock
 extends: capire.incidents
 
 modules:
-  - name: capire.incidents-srv
+  - name: incidents-srv
     parameters:
       memory: 128M

@@ -1,8 +1,0 @@
-_schema-version: '3.1'
-ID: capire.incidents.remote-mock
-extends: capire.incidents
-
-modules:
-  - name: incidents-srv
-    parameters:
-      memory: 128M

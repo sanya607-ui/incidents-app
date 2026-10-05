@@ -2,7 +2,7 @@
   "name": "@capire/incidents",
   "version": "1.0.0",
   "dependencies": {
-    "@sap/cds": ">=9"
+    "@sap/cds": "^10"
   },
   "devDependencies": {
     "@cap-js/cds-test": "*",

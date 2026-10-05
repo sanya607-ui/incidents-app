@@ -1,4 +1,4 @@
-using ProcessorService as service from '../../services';
+using ProcessorService as service from '../../srv/processor-service';
 annotate service.Incidents with @(
     /*adding email to the object page enables users to view the
     changes recieved via Messaging/Eventing*/

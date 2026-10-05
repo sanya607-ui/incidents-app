@@ -39,7 +39,7 @@ annotate service.Incidents with @(
         Value : title,
         Label : '{i18n>Title}',
       },
-         {{
+         {
         $Type : 'UI.DataField',
         Value : customer_ID,
         Label : '{i18n>Customer}',
